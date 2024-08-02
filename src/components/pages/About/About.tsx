@@ -26,7 +26,9 @@ function About() {
         American, and Wired. In 2018 I was recognized in Forbes 30 Under 30 –
         Science.
       </p>
-      <AuroraBackground children={<Timeline />} />
+      <AuroraBackground>
+        <Timeline />
+      </AuroraBackground>
       <div className="flex justify-center items-start gap-20">
         <Interests />
         <Publications />
