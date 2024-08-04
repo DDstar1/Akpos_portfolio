@@ -1,6 +1,9 @@
 import React from "react";
 import ImageGallary from "@/components/ui/ImageGallary";
 import { Button } from "@/components/ui/MovingBorder";
+// import styles from "@/components/pages/Gallery/Gallery.module.css";
+
+// Ensure this path is correct
 
 const imageList = [
   "/images/akpos_1.jpeg",
