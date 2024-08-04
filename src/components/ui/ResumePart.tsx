@@ -4,70 +4,8 @@ import { Fade } from "react-awesome-reveal";
 
 const ResumePart = () => {
   return (
-    <div className="flex max-w-4xl mx-auto my-2 bg-white text-gray-800">
-      <div className="bg-amber-900 p-3 text-white">
-        <Fade cascade>
-          <section className="mb-6">
-            <h1 className="text-xl font-semibold mb-2 text-blue-600">
-              Contact
-            </h1>
-            <p>
-              <span className="font-semibold">LinkedIn:</span>{" "}
-              <a
-                href="https://www.linkedin.com/in/aminone-alexander-6876671b3"
-                className="text-blue-500 hover:underline"
-              >
-                www.linkedin.com/in/aminone-alexander-6876671b3
-              </a>
-            </p>
-          </section>
-          <section>
-            <h2 className="text-xl font-semibold mb-2 text-blue-600">
-              Top Skills
-            </h2>
-            <ul className="list-disc pl-5">
-              <li>Analytical Skills</li>
-              <li>Robotics</li>
-              <li>Neuroscience</li>
-            </ul>
-          </section>
-          <section>
-            <h2 className="text-xl font-semibold mb-2 text-blue-600">
-              Languages
-            </h2>
-            <ul className="list-disc pl-5">
-              <li>Chinese (Mandarin) (Elementary)</li>
-              <li>English (Native or Bilingual)</li>
-              <li>Russian (Elementary)</li>
-              <li>French (Elementary)</li>
-            </ul>
-          </section>
-          <section className="mt-6">
-            <h2 className="text-xl font-semibold mb-2 text-blue-600">
-              Certifications
-            </h2>
-            <ul className="list-disc pl-5">
-              <li>Health Safety and Environment(HSE) Level 3</li>
-              <li>Health Safety and Environment(HSE) Level 2</li>
-              <li>Basic First Aid/CPR</li>
-              <li>Health Safety and Environment(HSE) Level 1</li>
-              <li>Level 1 Program</li>
-            </ul>
-          </section>
-          <section className="mt-6">
-            <h2 className="text-xl font-semibold mb-2 text-blue-600">
-              Honors-Awards
-            </h2>
-            <ul className="list-disc pl-5">
-              <li>OpenBCI Discovery Program Awardee</li>
-              <li>Best in Science</li>
-              <li>Lapo Quiz Regional Finalist</li>
-            </ul>
-          </section>
-        </Fade>
-      </div>
-
-      <div className="p-3">
+    <div className="flex flex-col md:flex-row max-w-4xl mx-auto my-2 bg-amber-100 text-black">
+      <div className="p-3 flex-1">
         <header className="mb-6">
           <h1 className="text-3xl font-bold text-blue-600">
             Aminone Alexander
@@ -77,6 +15,18 @@ const ResumePart = () => {
           </p>
           <p className="text-gray-600">Lagos, Lagos State, Nigeria</p>
         </header>
+        <section className="mb-6 block md:hidden">
+          <h1 className="text-xl font-semibold mb-2 text-blue-600">Contact</h1>
+          <p>
+            <span className="font-semibold">LinkedIn:</span>{" "}
+            <a
+              href="https://www.linkedin.com/in/aminone-alexander-6876671b3"
+              className="text-blue-500 hover:underline"
+            >
+              www.linkedin.com/in/aminone-alexander-6876671b3
+            </a>
+          </p>
+        </section>
         <section className="mt-6">
           <h2 className="text-xl font-semibold mb-2 text-blue-600">
             Experience
@@ -137,6 +87,67 @@ const ResumePart = () => {
             ))}
           </Fade>
         </section>
+      </div>
+      <div className="bg-amber-800 p-3 text-white flex-1">
+        <Fade cascade>
+          <section className="mb-6 hidden md:block">
+            <h1 className="text-xl font-semibold mb-2 text-blue-600">
+              Contact
+            </h1>
+            <p>
+              <span className="font-semibold">LinkedIn:</span>{" "}
+              <a
+                href="https://www.linkedin.com/in/aminone-alexander-6876671b3"
+                className="text-blue-500 hover:underline"
+              >
+                www.linkedin.com/in/aminone-alexander-6876671b3
+              </a>
+            </p>
+          </section>
+          <section>
+            <h2 className="text-xl font-semibold mb-2 text-blue-600">
+              Top Skills
+            </h2>
+            <ul className="list-disc pl-5 mb-2">
+              <li>Analytical Skills</li>
+              <li>Robotics</li>
+              <li>Neuroscience</li>
+            </ul>
+          </section>
+          <section>
+            <h2 className="text-xl font-semibold mb-2 text-blue-600">
+              Languages
+            </h2>
+            <ul className="list-disc pl-5">
+              <li>Chinese (Mandarin) (Elementary)</li>
+              <li>English (Native or Bilingual)</li>
+              <li>Russian (Elementary)</li>
+              <li>French (Elementary)</li>
+            </ul>
+          </section>
+          <section className="mt-6">
+            <h2 className="text-xl font-semibold mb-2 text-blue-600">
+              Certifications
+            </h2>
+            <ul className="list-disc pl-5">
+              <li>Health Safety and Environment(HSE) Level 3</li>
+              <li>Health Safety and Environment(HSE) Level 2</li>
+              <li>Basic First Aid/CPR</li>
+              <li>Health Safety and Environment(HSE) Level 1</li>
+              <li>Level 1 Program</li>
+            </ul>
+          </section>
+          <section className="mt-6">
+            <h2 className="text-xl font-semibold mb-2 text-blue-600">
+              Honors-Awards
+            </h2>
+            <ul className="list-disc pl-5">
+              <li>OpenBCI Discovery Program Awardee</li>
+              <li>Best in Science</li>
+              <li>Lapo Quiz Regional Finalist</li>
+            </ul>
+          </section>
+        </Fade>
       </div>
     </div>
   );
