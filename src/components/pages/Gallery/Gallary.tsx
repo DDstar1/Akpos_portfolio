@@ -42,8 +42,13 @@ const Gallery = () => {
         <div className="modal-box">
           <h3 className="font-bold text-lg">Support My Work</h3>
           <p className="py-4">
-            Thank you for your support! Press ESC key or click the button below
-            to close this dialog.
+            <p>Thank you for your support!</p>
+            <br />
+            <p>ABHULUIMEN OSEREMEN DESTINY</p>
+
+            <p>ZENITH BANK</p>
+            <p>2270108837</p>
+            <p>&#x1F643;</p>
           </p>
           <div className="modal-action">
             <form method="dialog">
