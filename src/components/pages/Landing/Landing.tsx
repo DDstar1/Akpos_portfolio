@@ -2,11 +2,11 @@
 
 import React from "react";
 import MyTypeWriter from "../../ui/MyTypeWriter";
-import { FiTwitter } from "react-icons/fi";
-import { FaInstagram } from "react-icons/fa6";
-import { FaWhatsapp } from "react-icons/fa";
+import { FiGithub, FiTwitter } from "react-icons/fi";
+import { FaLinkedin, FaEnvelope } from "react-icons/fa6";
 import { ImagesSlider } from "@/components/ui/HeroBg";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const backgrounds = [
   "/images/akpos_1.jpeg",
@@ -28,20 +28,37 @@ function Home() {
         </motion.p>
         <div className="mt-8 flex gap-6 justify-center">
           {[
-            { icon: <FiTwitter />, href: "#", color: "#1DA1F2" },
-            { icon: <FaInstagram />, href: "#", color: "#C13584" },
-            { icon: <FaWhatsapp />, href: "#", color: "#25D366" },
+            {
+              icon: <FiGithub />,
+              href: "https://github.com/Xanderee12",
+              color: "#171515",
+            },
+            {
+              icon: <FiTwitter />,
+              href: "https://x.com/XanderLi12",
+              color: "#1DA1F2",
+            },
+
+            {
+              icon: <FaLinkedin />,
+              href: "https://www.linkedin.com/in/aminone-alexander-6876671b3",
+              color: "#0077B5",
+            },
+            {
+              icon: <FaEnvelope />,
+              href: "mailto:aminonelex@gmail.com",
+              color: "#D44638",
+            },
           ].map(({ icon, href, color }, index) => (
-            <a
+            <Link
               key={index}
               href={href}
               className="rounded-2xl backdrop-blur-md bg-gray-300/30 p-3 hover:scale-105 transition-transform duration-300"
               target="_blank"
-              rel="noopener noreferrer"
               style={{ color }}
             >
               {React.cloneElement(icon, { size: 30 })}
-            </a>
+            </Link>
           ))}
         </div>
       </motion.div>
