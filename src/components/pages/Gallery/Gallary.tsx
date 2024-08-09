@@ -1,9 +1,6 @@
 import React from "react";
-import ImageGallary from "@/components/ui/ImageGallary";
+import ImageGallery from "@/components/ui/ImageGallary";
 import { Button } from "@/components/ui/MovingBorder";
-// import styles from "@/components/pages/Gallery/Gallery.module.css";
-
-// Ensure this path is correct
 
 const imageList = [
   "/images/akpos_1.jpeg",
@@ -21,36 +18,38 @@ const imageList = [
   "/images/akpos_13.jpeg",
   "/images/akpos_14.jpeg",
 ];
-const Gallary = () => {
+
+const Gallery = () => {
   return (
-    <div className="flex flex-col h-screen">
-      <center className="m-3">
-        {" "}
+    <div className="flex flex-col min-h-screen bg-gray-100 dark:bg-slate-900 text-center py-6">
+      <div className="mb-8">
         <Button
           borderRadius="1.75rem"
-          className="btn glass text-blue-50 hover:text-black dark:bg-slate-900  dark:text-white border-neutral-200 dark:border-slate-800"
+          className="btn glass text-blue-50 hover:text-black dark:bg-slate-900 dark:text-white border-neutral-200 dark:border-slate-800"
           onClick={() =>
             (
-              document.getElementById("my_modal_1") as HTMLInputElement
+              document.getElementById("my_modal_1") as HTMLDialogElement
             ).showModal()
           }
         >
           Buy me a Coffee
         </Button>
-        {/* <button className="btn glass">Glass button</button> */}
-      </center>
-      <ImageGallary images={imageList} />
-      {/* The button to open modal */}
+      </div>
+      <div className="flex-1">
+        <ImageGallery images={imageList} />
+      </div>
       <dialog id="my_modal_1" className="modal">
         <div className="modal-box">
-          <h3 className="font-bold text-lg">Hello!</h3>
+          <h3 className="font-bold text-lg">Support My Work</h3>
           <p className="py-4">
-            Press ESC key or click the button below to close
+            Thank you for your support! Press ESC key or click the button below
+            to close this dialog.
           </p>
           <div className="modal-action">
             <form method="dialog">
-              {/* if there is a button in form, it will close the modal */}
-              <button className="btn">Close</button>
+              <button className="btn bg-blue-500 hover:bg-blue-700 text-white">
+                Close
+              </button>
             </form>
           </div>
         </div>
@@ -59,4 +58,4 @@ const Gallary = () => {
   );
 };
 
-export default Gallary;
+export default Gallery;

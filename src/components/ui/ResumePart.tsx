@@ -9,26 +9,29 @@ const ResumePart = () => {
     setIsExpanded(!isExpanded);
   };
   return (
-    <div className="flex flex-col md:max-w-4xl max-w-[90vw] mx-auto items-center">
+    <div className="flex flex-col md:max-w-4xl max-w-[90vw] mx-auto items-center my-6">
       <div
-        className={`flex flex-col md:flex-row my-2 transition-all duration-1000 bg-amber-100 text-black w-full ${
+        className={`flex flex-col md:flex-row transition-all duration-1000 bg-white shadow-lg rounded-lg overflow-hidden w-full ${
           isExpanded ? "max-h-[5000px]" : "max-h-[70vh]"
-        } overflow-hidden`}
+        }`}
       >
-        <div className="p-4 flex-1">
-          <header className="mb-6">
-            <h1 className="text-3xl font-bold text-blue-600">
+        {/* Left Section */}
+        <div className="p-6 flex-1">
+          <header className="mb-8">
+            <h1 className="text-4xl font-bold text-blue-700">
               Aminone Alexander
             </h1>
-            <p className="text-lg">
+            <p className="text-lg mt-2">
               B.Eng Mechatronics Engineering || Robotics and Embedded Systems
             </p>
-            <p className="text-gray-600">Lagos, Lagos State, Nigeria</p>
+            <p className="text-gray-500 mt-1">Lagos, Lagos State, Nigeria</p>
           </header>
-          <section className="mb-6 block md:hidden">
-            <h1 className="text-xl font-semibold mb-2 text-blue-600">
+
+          {/* Contact for Mobile */}
+          <section className="mb-8 block md:hidden">
+            <h2 className="text-2xl font-semibold mb-4 text-blue-700">
               Contact
-            </h1>
+            </h2>
             <p>
               <span className="font-semibold">LinkedIn:</span>{" "}
               <a
@@ -39,8 +42,10 @@ const ResumePart = () => {
               </a>
             </p>
           </section>
-          <section className="mt-6">
-            <h2 className="text-xl font-semibold mb-2 text-blue-600">
+
+          {/* Experience Section */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4 text-blue-700">
               Experience
             </h2>
             <Fade cascade>
@@ -64,8 +69,8 @@ const ResumePart = () => {
                   location: "Delta State, Nigeria",
                 },
               ].map((job, index) => (
-                <div key={index} className="mb-4">
-                  <h3 className="font-semibold">{job.title}</h3>
+                <div key={index} className="mb-6">
+                  <h3 className="font-semibold text-lg">{job.title}</h3>
                   <p className="text-gray-600">{job.company}</p>
                   <p className="text-gray-600">{job.period}</p>
                   <p className="text-gray-600">{job.location}</p>
@@ -73,8 +78,10 @@ const ResumePart = () => {
               ))}
             </Fade>
           </section>
-          <section className="mt-6">
-            <h2 className="text-xl font-semibold mb-2 text-blue-600">
+
+          {/* Education Section */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4 text-blue-700">
               Education
             </h2>
             <Fade cascade>
@@ -91,69 +98,80 @@ const ResumePart = () => {
                   period: "September 2013 - July 2019",
                 },
               ].map((edu, index) => (
-                <div key={index} className="mb-4">
-                  <h3 className="font-semibold">{edu.school}</h3>
-                  <p>{edu.degree}</p>
+                <div key={index} className="mb-6">
+                  <h3 className="font-semibold text-lg">{edu.school}</h3>
+                  <p className="text-gray-600">{edu.degree}</p>
                   <p className="text-gray-600">{edu.period}</p>
                 </div>
               ))}
             </Fade>
           </section>
         </div>
-        <div className="bg-amber-800 p-4 text-white flex-1">
+
+        {/* Right Section */}
+        <div className="bg-gradient-to-br from-amber-600 to-amber-900 p-6 text-white flex-1">
           <Fade cascade>
-            <section className="mb-6 hidden md:block">
-              <h1 className="text-xl font-semibold mb-2 text-blue-600">
+            {/* Contact for Desktop */}
+            <section className="mb-8 hidden md:block">
+              <h2 className="text-2xl font-semibold mb-4 text-blue-300">
                 Contact
-              </h1>
+              </h2>
               <p>
                 <span className="font-semibold">LinkedIn:</span>{" "}
                 <a
                   href="https://www.linkedin.com/in/aminone-alexander-6876671b3"
-                  className="text-blue-500 hover:underline"
+                  className="text-blue-200 hover:underline"
                 >
                   www.linkedin.com/in/aminone-alexander-6876671b3
                 </a>
               </p>
             </section>
-            <section>
-              <h2 className="text-xl font-semibold mb-2 text-blue-600">
+
+            {/* Skills Section */}
+            <section className="mb-8">
+              <h2 className="text-2xl font-semibold mb-4 text-blue-300">
                 Top Skills
               </h2>
-              <ul className="list-disc pl-5 mb-2">
+              <ul className="list-disc pl-6 space-y-2">
                 <li>Analytical Skills</li>
                 <li>Robotics</li>
                 <li>Neuroscience</li>
               </ul>
             </section>
-            <section>
-              <h2 className="text-xl font-semibold mb-2 text-blue-600">
+
+            {/* Languages Section */}
+            <section className="mb-8">
+              <h2 className="text-2xl font-semibold mb-4 text-blue-300">
                 Languages
               </h2>
-              <ul className="list-disc pl-5">
+              <ul className="list-disc pl-6 space-y-2">
                 <li>Chinese (Mandarin) (Elementary)</li>
                 <li>English (Native or Bilingual)</li>
                 <li>Russian (Elementary)</li>
                 <li>French (Elementary)</li>
               </ul>
             </section>
-            <section className="mt-6">
-              <h2 className="text-xl font-semibold mb-2 text-blue-600">
+
+            {/* Certifications Section */}
+            <section className="mb-8">
+              <h2 className="text-2xl font-semibold mb-4 text-blue-300">
                 Certifications
               </h2>
-              <ul className="list-disc pl-5">
-                <li>Health Safety and Environment(HSE) Level 3</li>
-                <li>Health Safety and Environment(HSE) Level 2</li>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Health Safety and Environment (HSE) Level 3</li>
+                <li>Health Safety and Environment (HSE) Level 2</li>
                 <li>Basic First Aid/CPR</li>
-                <li>Health Safety and Environment(HSE) Level 1</li>
+                <li>Health Safety and Environment (HSE) Level 1</li>
                 <li>Level 1 Program</li>
               </ul>
             </section>
-            <section className="mt-6">
-              <h2 className="text-xl font-semibold mb-2 text-blue-600">
-                Honors-Awards
+
+            {/* Honors and Awards Section */}
+            <section className="mb-8">
+              <h2 className="text-2xl font-semibold mb-4 text-blue-300">
+                Honors & Awards
               </h2>
-              <ul className="list-disc pl-5">
+              <ul className="list-disc pl-6 space-y-2">
                 <li>OpenBCI Discovery Program Awardee</li>
                 <li>Best in Science</li>
                 <li>Lapo Quiz Regional Finalist</li>
@@ -162,9 +180,10 @@ const ResumePart = () => {
           </Fade>
         </div>
       </div>
+
       <button
         onClick={toggleExpand}
-        className="bg-blue-500 relative bottom-3 bg-opacity-40 backdrop-filter backdrop-blur-md text-white py-2 w-full max-w-[90vw] rounded hover:bg-blue-600 hover:bg-opacity-70 transition-all duration-300"
+        className="bg-blue-600 bg-opacity-70 mt-4 text-white py-3 w-full max-w-[90vw] rounded hover:bg-blue-700 transition-all duration-300"
       >
         {isExpanded ? "Show Less" : "Show More"}
       </button>
