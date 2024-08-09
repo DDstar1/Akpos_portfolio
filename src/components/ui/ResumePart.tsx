@@ -8,6 +8,7 @@ const ResumePart = () => {
   const toggleExpand = () => {
     setIsExpanded(!isExpanded);
   };
+
   return (
     <div className="flex flex-col md:max-w-4xl max-w-[90vw] mx-auto items-center my-6">
       <div
@@ -183,7 +184,7 @@ const ResumePart = () => {
 
       <button
         onClick={toggleExpand}
-        className="bg-blue-600 bg-opacity-70 mt-4 text-white py-3 w-full max-w-[90vw] rounded hover:bg-blue-700 transition-all duration-300"
+        className="bg-blue-600 bg-opacity-70 mt-4 text-white py-3 w-full max-w-[90vw] rounded hover:bg-blue-700 transition-all duration-300 sticky bottom-0 z-10"
       >
         {isExpanded ? "Show Less" : "Show More"}
       </button>

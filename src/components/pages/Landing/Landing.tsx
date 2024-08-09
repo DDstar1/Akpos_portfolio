@@ -9,9 +9,10 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const backgrounds = [
+  "images/akpos_rbot.jpeg",
   "/images/akpos_1.jpeg",
+  "/images/akpos_10.jpeg",
   "/images/akpos_2.jpeg",
-  "/images/akpos_3.jpeg",
 ];
 
 function Home() {

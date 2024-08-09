@@ -10,7 +10,7 @@ const MyTypeWriter = () => {
       <span className="text-blue-600 ">
         <Typewriter
           options={{
-            strings: ["a Scientist!", "Innovative!", "a Strategist!"],
+            strings: ["an Engineer!", "Innovative!", "a Strategist!"],
             autoStart: true,
             loop: true, // Set to true to loop through the strings
             delay: 50, // Adjust typing speed
