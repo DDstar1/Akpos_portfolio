@@ -57,11 +57,11 @@ function Publications() {
   return (
     <div className="mt-5 flex flex-col justify-center items-center">
       <h2 className="p-4 text-2xl font-semibold">Publications</h2>
-      <div className="flex gap-6 items-center justify-center flex-wrap">
+      <div className="flex gap-5 items-center justify-center flex-wrap">
         {publications.map((pub, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-center basis-1/4 p-4 m-2 bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
+            className="flex flex-col min-w-72 items-center justify-center basis-1/4 p-4 m-2 bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
           >
             {pub.icon}
             <h3 className="mt-4 text-xl font-medium text-center">
