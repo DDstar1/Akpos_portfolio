@@ -30,7 +30,13 @@ function About() {
         </p>
       </div>
 
-      <Timeline />
+      <div className="text-center">
+        <h1 className="text-4xl font-bold text-blue-900 dark:text-white mb-6">
+          My TimeLine
+        </h1>
+        <hr className="bg-[#007fff] h-[3px]" />
+        <Timeline />
+      </div>
 
       <div className="flex flex-col md:flex-row justify-center md:items-start items-center gap-10">
         <Interests />
