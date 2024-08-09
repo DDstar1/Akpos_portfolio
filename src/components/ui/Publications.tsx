@@ -38,20 +38,6 @@ function Publications() {
         "An exploration of the role of artificial intelligence in the development of biomedical engineering solutions, focusing on AI-driven diagnostics and treatment.",
       year: 2023,
     },
-    {
-      title: "Global Impact of OpenBCI Technologies",
-      icon: <FaGlobe size={30} />,
-      description:
-        "An analysis of the global influence of OpenBCI technologies in neuroscience, education, and beyond, highlighting key case studies and applications.",
-      year: 2019,
-    },
-    {
-      title: "Material Science for Brain-Computer Interfaces",
-      icon: <GiMaterialsScience size={30} />,
-      description:
-        "A detailed examination of the materials used in the development of brain-computer interfaces, with a focus on innovations that enhance performance and safety.",
-      year: 2021,
-    },
   ];
 
   return (
