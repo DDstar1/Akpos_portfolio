@@ -22,11 +22,11 @@ const imageList = [
 
 const Gallery = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-100 dark:bg-slate-900 text-center py-6">
+    <div className="flex flex-col min-h-screen bg-gray-100 text-center py-6">
       <div className="mb-8">
         <Button
           borderRadius="1.75rem"
-          className="btn glass text-blue-50 hover:text-black dark:bg-slate-900 dark:text-white border-neutral-200 dark:border-slate-800"
+          className="btn glass text-blue-50 hover:text-black  border-neutral-200"
           onClick={() =>
             (
               document.getElementById("my_modal_1") as HTMLDialogElement

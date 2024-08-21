@@ -47,16 +47,14 @@ function Publications() {
         {publications.map((pub, index) => (
           <div
             key={index}
-            className="flex flex-col min-w-72 items-center justify-center basis-1/4 p-4 m-2 bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
+            className="flex flex-col min-w-72 items-center justify-center basis-1/4 p-4 m-2 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
           >
             {pub.icon}
             <h3 className="mt-4 text-xl font-medium text-center">
               {pub.title}
             </h3>
-            <p className="mt-2 text-center text-gray-600 dark:text-gray-300">
-              {pub.description}
-            </p>
-            <span className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+            <p className="mt-2 text-center text-gray-600 ">{pub.description}</p>
+            <span className="mt-2 text-sm text-gray-500 ">
               Published: {pub.year}
             </span>
           </div>

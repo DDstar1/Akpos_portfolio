@@ -8,10 +8,8 @@ function About() {
   return (
     <div className="mx-auto max-w-[1200px] p-6 flex flex-col justify-center align-center space-y-10">
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-blue-900 dark:text-white mb-6">
-          About Me
-        </h1>
-        <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+        <h1 className="text-4xl font-bold text-blue-900  mb-6">About Me</h1>
+        <p className="text-lg leading-relaxed text-gray-700">
           I became fascinated with the relationship between the human brain and
           mind after suffering concussions playing college football and rugby.
           After completing my bachelor’s degree in engineering at Columbia
@@ -31,9 +29,7 @@ function About() {
       </div>
 
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-blue-900 dark:text-white mb-6">
-          My TimeLine
-        </h1>
+        <h1 className="text-4xl font-bold text-blue-900 mb-6">My TimeLine</h1>
         <hr className="bg-[#007fff] h-[3px]" />
         <Timeline />
       </div>

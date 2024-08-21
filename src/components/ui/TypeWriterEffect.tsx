@@ -68,7 +68,7 @@ export const TypewriterEffect = ({
           {sentence.text.map((char, index) => (
             <span
               key={`char-${index}`}
-              className={cn(`dark:text-white text-black`, sentence.className)}
+              className={cn(` text-black`, sentence.className)}
             >
               {char}
             </span>
