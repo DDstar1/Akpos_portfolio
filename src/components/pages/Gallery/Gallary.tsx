@@ -41,7 +41,7 @@ const Gallery = () => {
       </div>
       <dialog id="my_modal_1" className="modal">
         <div className="modal-box">
-          <p className="py-4 text-white">
+          <p className="py-4 text-black dark:text-white">
             <p>Thank you for your support!</p>
             <br />
             <p>ABHULUIMEN OSEREMEN DESTINY</p>
