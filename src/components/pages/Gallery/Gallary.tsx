@@ -33,7 +33,7 @@ const Gallery = () => {
             ).showModal()
           }
         >
-          Buy me a Coffee
+          Support My Work
         </Button>
       </div>
       <div className="flex-1">
@@ -41,8 +41,7 @@ const Gallery = () => {
       </div>
       <dialog id="my_modal_1" className="modal">
         <div className="modal-box">
-          <h3 className="font-bold text-lg">Support My Work</h3>
-          <p className="py-4">
+          <p className="py-4 text-white">
             <p>Thank you for your support!</p>
             <br />
             <p>ABHULUIMEN OSEREMEN DESTINY</p>
